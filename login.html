@@ -1,0 +1,125 @@
+<?php
+	$_SESSION["logged"] = false;
+?>
+<!doctype html>
+<html>
+
+<head>
+	<title>STUDENT INFO SYSTEM - NIT HAMIRPUR</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+	<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="/dbms/logo/logo.png">
+</head>
+<body class="templatemo-bg-gray">
+<!-- TITLE BEGIN -->
+<div id="title"> <strong>
+    <center>
+    STUDENT INFORMATION SYSTEM<br><center>NIT HAMIRPUR</strong>
+</div>
+<!-- TITLE TITLE END  -->
+<!-- Student LOGIN -->	
+
+    <div class="containerSTU" >
+		<div class="col-md-12">
+			<h1 class="margin-bottom-15">Student Login</h1>
+			<form class="form-horizontal templatemo-container templatemo-login-form-1 margin-bottom-30" role="form" action="stu_dash.php" method="post">				
+		        <div class="form-group">
+		          <div class="col-xs-12">		            
+		            <div class="control-wrapper">
+		            	<label for="username" class="control-label fa-label"><i class="fa fa-user fa-medium"></i></label>
+		            	<input type="text" class="form-control" id="username" maxlength="5" placeholder="Roll Number" required name="susername" >
+                    </div>		            	            
+		          </div>              
+		        </div>
+		        <div class="form-group">
+		          <div class="col-md-12">
+		          	<div class="control-wrapper">
+		            	<label for="password" class="control-label fa-label"><i class="fa fa-lock fa-medium"></i></label>
+		            	<input type="password" class="form-control" id="password" placeholder="Password" required name="spassword">
+		            </div>
+		          </div>
+		        </div>
+		        <div class="form-group">
+		          <div class="col-md-12">
+	             	<!-- Removed Remember me-->
+		          </div>
+		        </div>
+		        <div class="form-group">
+		          <div class="col-md-12">
+		          	<div class="control-wrapper">
+		          		<input type="submit" value="Log in" class="btn btn-info">
+		          		<a href="forgot-password.html" class="text-right pull-right">Forgot password?</a>
+                         
+		          	</div>
+		        </div>
+                 </div>
+                  
+		        <hr>
+		        <div class="form-group">
+		        	<div style="margin-top:-5%;margin-bottom:-100%"class="text-center">
+              <a href="stu_regis.html" class="templatemo-create-new">Create new account <i class="fa fa-arrow-circle-o-right"></i></a>			      	
+		      </div>
+		        </div>
+		      </form>
+		     
+		</div>
+	</div>
+    <!-- Student LOGIN END-->
+    
+    <!-- TEacher LOGIN -->
+        <div class="containerTEAC">
+		<div class="col-md-12">
+			<h1 class="margin-bottom-15">Faculty Login</h1>
+			<form class="form-horizontal templatemo-container templatemo-login-form-1 margin-bottom-30" role="form" action="fac_dash.php" method="post">				
+		        <div class="form-group">
+		          <div class="col-xs-12">		            
+		            <div class="control-wrapper">
+		            	<label for="username" class="control-label fa-label"><i class="fa fa-user fa-medium"></i></label>
+		            	<input type="text" class="form-control" id="username" placeholder="Faculty ID" required name="tusername">
+		            </div>		            	            
+		          </div>              
+		        </div>
+		        <div class="form-group">
+		          <div class="col-md-12">
+		          	<div class="control-wrapper">
+		            	<label for="password" class="control-label fa-label"><i class="fa fa-lock fa-medium"></i></label>
+		            	<input type="password" class="form-control" id="password" placeholder="Password" required name="tpassword">
+		            </div>
+		          </div>
+		        </div>
+		        <div class="form-group">
+		          <div class="col-md-12">
+	             	<!-- Removed Remember me-->
+		          </div>
+		        </div>
+		        <div class="form-group">
+		          <div class="col-md-12">
+		          	<div class="control-wrapper">
+		          		<input type="submit" value="Log in" class="btn btn-info">
+		          		<a href="forgot-password.html" class="text-right pull-right">Forgot password?</a>
+		          	</div>
+		          </div>
+		        </div>
+		        <hr>
+		        <div class="form-group">
+		        	<!-- Removed LOGIN WITH-->
+		        </div>
+		      </form>
+		     
+		</div>
+	</div>
+    
+    <!-- Teacher Login ends -->
+    <div id="footer">
+    	Developed By: Prateek Prasher and Arnav Dhiman, CSED NIT-Hamirpur
+    	<br>Found a bug ? <a href="contact/contact.html">Contact us.</a>
+    </div>
+</body>
+</html>

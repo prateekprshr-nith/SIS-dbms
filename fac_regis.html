@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+	<title>Create Account</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+	<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
+
+    <link rel="icon" type="image/png" href="/dbms/logo/logo.png">
+</head>
+<body class="templatemo-bg-gray">
+	<h1 class="margin-bottom-15">Create Faculty Account</h1>
+	<div class="containerREG">
+		<div class="col-md-12">			
+			<form class="form-horizontal templatemo-create-account templatemo-container" role="form" action="fac_regis.php" method="post">
+				<div class="form-inner">
+					<div class="form-group">
+			          <div class="col-md-6">		          	
+			            <label for="first_name" class="control-label">Name</label>
+			            <input type="text" class="form-control" id="first_name" required name="name">		            		            		            
+			          </div>  
+			          <div class="col-md-3">
+			            <label for="id" class="control-label">ID</label><input type="text" class="form-control" id="id" required name="id">		            		            		            
+			          </div>
+                        <!--Bdate-->
+                        <div class="col-md-3">
+                            <label for="date" class="control-label">Birth Date:<br></label>
+                            <input type="date" id="date" min="1960-01-01" required class="form-control" name="bday">
+                        </div>
+			        </div>
+			        <div class="form-group">
+			          <div class="col-md-6">		          	
+			            <label for="email" class="control-label">Email</label>
+			            <input type="email" class="form-control" id="email" required name="email">		            		            		            
+			          </div>              
+			        
+                    
+                    <!-- Department Choice -->
+
+                        <div class="col-md-6">
+                            <label for="state" class="control-label">Department:<br></label>
+                            <select id="department" class="form-control" required name="department">
+                                <option value="">Select a Department...</option>
+                                <option value="CSED">Computer Science and Engineering Dept.</option>
+                                <option value="ECED">Electronics and Communication Engineering Dept.</option>
+                                <option value="EED">Electrical and Electronics Engineering Dept.</option>
+                                <option value="MED">Mechanical Engineering Dept.</option>
+                                <option value="CED">Civil Engineering Dept.</option>
+                                <option value="CHED">Chemical Engineering Dept.</option>
+                                <option value="ARD">Architecture Dept.</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+                    <!-- End of department choice -->		
+			        <div class="form-group">
+			          <div class="col-md-6">		          	
+			            <label for="phone" class="control-label">Phone Number</label>
+			            <input type="text" class="form-control" id="phone" required maxlength="10" name="phone">		            		            		            
+			          </div>
+			          <div class="col-md-6">		          	
+			            <label for="office" class="control-label">Office Address</label><input type="text" class="form-control" id="office" required maxlength="200" name="office">		            		            		            
+			          </div>         
+			        </div>
+			        <div class="form-group">
+			          <div class="col-md-6">
+			            <label for="password" class="control-label">Password</label>
+			            <input type="password" class="form-control" id="password" required name="password">
+			          </div>
+			          <div class="col-md-6">
+			            <label for="password" class="control-label">Confirm Password</label>
+			            <input type="password" class="form-control" id="password_confirm" required name="c_password">
+			          </div>
+			        </div>
+			        
+			        <div class="form-group">
+			          <div class="col-md-6">
+			            <input type="submit" value="Create account" class="btn btn-info">
+                      </div>
+                      <div class="col-md-6">
+			            <label class="control-label">Already Registered ? <a href="login.html" >Login</a></label>
+                       </div> 
+			          </div>
+			        </div>				    	
+		      </form>		      
+		</div>
+	</div>
+	
+    <!-- Footer -->
+    <div id="footer">
+    	Developed By: Prateek Prasher and Arnav Dhiman, CSED NIT-Hamirpur
+    	<br>Found a bug ? <a href="contact/contact.html">Contact us.</a>
+    </div>
+	
+</body>
+</html>
